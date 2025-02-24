@@ -10,4 +10,5 @@ public static class DoctorErrorMessages
     public static string InvalidPhoneLength => "The Phone field must have a maximum of 11 characters.";
     public static string InvalidCRM => "The CRM field is required.";
     public static string InvalidCRMLength => "The CRM field must have a maximum of 10 characters.";
+    public static string InvalidAddress => "The Address field is required.";
 }

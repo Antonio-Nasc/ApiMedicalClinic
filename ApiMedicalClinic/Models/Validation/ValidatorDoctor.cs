@@ -19,5 +19,9 @@ public class ValidatorDoctor : AbstractValidator<Doctor>
         RuleFor(a => a.CRM)
             .NotEmpty().WithMessage(DoctorErrorMessages.InvalidCRM)
             .MaximumLength(10).WithMessage(DoctorErrorMessages.InvalidCRMLength);
+        RuleFor(a => a.AddressId)
+            .NotEmpty().WithMessage(DoctorErrorMessages.InvalidAddress);
+        RuleFor(a => a.Address)
+            .NotNull().WithMessage(DoctorErrorMessages.InvalidAddress);
     }
 }

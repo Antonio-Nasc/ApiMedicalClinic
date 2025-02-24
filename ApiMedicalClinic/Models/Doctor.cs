@@ -22,7 +22,9 @@ public class Doctor
     public string? Email { get; set; }
     public int SpecializationId { get; set; }
     public Specialization? Specialization { get; set; }
+    [Required]
     public int AddressId { get; set; }
+    [Required]
     public Address? Address { get; set; }
     public int? UserId { get; set; }
     public User? User { get; set; }

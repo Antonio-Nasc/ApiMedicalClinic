@@ -23,6 +23,10 @@ public class ValidatorPatient : AbstractValidator<Patient>
             .NotEmpty().WithMessage(PatientErrorMessages.InvalidBirthDate);
         RuleFor(p => p.SexualType)
             .NotEmpty().WithMessage(PatientErrorMessages.InvalidSexualType);
+        RuleFor(a => a.AddressId)
+           .NotEmpty().WithMessage(DoctorErrorMessages.InvalidAddress);
+        RuleFor(a => a.Address)
+            .NotNull().WithMessage(DoctorErrorMessages.InvalidAddress);
 
     }
 }

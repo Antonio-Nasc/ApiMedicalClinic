@@ -25,7 +25,9 @@ public class Patient
     [Required]
     [MaxLength(100)]
     public string? Email { get; set; }
+    [Required]
     public int AddressId { get; set; }
+    [Required]
     public Address? Address { get; set; }
     public int? UserId { get; set; }
     public User? User { get; set; }

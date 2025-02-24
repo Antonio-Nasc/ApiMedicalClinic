@@ -12,5 +12,7 @@ public static class PatientErrorMessages
     public static string InvalidDocumentLength => "The Document field must have a maximum of 11 characters.";
     public static string InvalidBirthDate => "The Birth Date field is required.";
     public static string InvalidSexualType => "The Sexual Type field is required.";
+    public static string InvalidAddress => "The Address field is required.";
+
 
 }
